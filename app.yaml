@@ -3,18 +3,7 @@ env: flex
 entrypoint: bundle exec rackup --port $PORT
 
 runtime_config:
-  operating_system: "ubuntu22"
+  operating_system: ubuntu22
 
 env_variables:
-  RAILS_MASTER_KEY: "$RAILS_MASTER_KEY"
-
-# This sample incurs costs to run on the App Engine flexible environment.
-# The settings below are to reduce costs during testing and are not appropriate
-# for production use. For more information, see:
-# https://cloud.google.com/appengine/docs/flexible/ruby/configuring-your-app-with-app-yaml
-manual_scaling:
-  instances: 1
-resources:
-  cpu: 1
-  memory_gb: 0.5
-  disk_size_gb: 10
+  RAILS_MASTER_KEY: "362100c91ecfc2c69320a0527a244048"
