@@ -1,8 +1,13 @@
+
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
   args: ['-c', 'gcloud app deploy']
   env:
   - 'RAILS_MASTER_KEY=${_RAILS_MASTER_KEY}'
+substitutions:
+  _RAILS_MASTER_KEY: unused
 options:
   logging: CLOUD_LOGGING_ONLY
+  dynamicSubstitutions: true
+  automapSubstitutions: true

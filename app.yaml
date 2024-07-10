@@ -5,6 +5,9 @@ entrypoint: bundle exec rackup --port $PORT
 runtime_config:
   operating_system: "ubuntu22"
 
+env_variables:
+  RAILS_MASTER_KEY: "$RAILS_MASTER_KEY"
+
 # This sample incurs costs to run on the App Engine flexible environment.
 # The settings below are to reduce costs during testing and are not appropriate
 # for production use. For more information, see:
