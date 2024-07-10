@@ -6,4 +6,4 @@ runtime_config:
   operating_system: ubuntu22
 
 env_variables:
-  RAILS_MASTER_KEY: "362100c91ecfc2c69320a0527a244048"
+  SECRET_KEY_BASE: "b11e08db18daf61af44ae85ceba7df961b00244078fe57627b72c4fe63c1a96ccaec6bf10a528a261783d662b9abf239bf03336f43b252d30e804b2418f3a66b"
